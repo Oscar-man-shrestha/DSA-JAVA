@@ -1,0 +1,7 @@
+{
+    "javascript.suggestionActions.enabled": true,
+    "editor.acceptSuggestionOnCommitCharacter": true,
+    "javascript.suggest.names": true,
+    "java.help.showReleaseNotes": true,
+    "files.autoSave": "onWindowChange"
+}
