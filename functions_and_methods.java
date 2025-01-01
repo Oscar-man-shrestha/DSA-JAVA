@@ -148,29 +148,59 @@
 
 //GCD...
 
+// import java.util.*;
+// public  class functions_and_methods{
+//     public static void Gcd(int r1,int r2){
+//         int or1=r1;
+//         int or2=r2;
+//        while (r1%r2!=0){
+//         int rem=r1%r2;
+//         r1=r2;
+//         r2=rem;
+//        }
+//        int gcd=r2;
+//        int lcm=(or1*or2)/gcd;
+//         System.out.println("The GCD of the Number is :"+gcd);
+//         System.out.println("The LCM of the Number is :"+lcm);
+//     }
+//     public static void main (String args []){
+//         Scanner sc=new Scanner(System.in);
+//         System.out.print("Put the value for r1 :");
+//         int r1=sc.nextInt();
+//         System.out.print("Put the value for r2 :");
+//         int r2=sc.nextInt();
+
+//         Gcd(r1, r2);
+//     }
+
+// }
+
+// //  Fibonacci Series of Numbers...
+
 import java.util.*;
-public  class functions_and_methods{
-    public static void Gcd(int r1,int r2){
-        int or1=r1;
-        int or2=r2;
-       while (r1%r2!=0){
-        int rem=r1%r2;
-        r1=r2;
-        r2=rem;
-       }
-       int gcd=r2;
-       int lcm=(or1*or2)/gcd;
-        System.out.println("The GCD of the Number is :"+gcd);
-        System.out.println("The LCM of the Number is :"+lcm);
+public class functions_and_methods{
+    public static void fibo(int n){
+        int FirstNum=0;
+        int SecondNum=1;
+        for(int i=1;i<=n;i++){
+            System.out.print(FirstNum+",");
+       int Fibonacci=FirstNum+SecondNum;
+       FirstNum=SecondNum;
+       SecondNum=Fibonacci;
+
+        }
+          
     }
     public static void main (String args []){
         Scanner sc=new Scanner(System.in);
-        System.out.print("Put the value for r1 :");
-        int r1=sc.nextInt();
-        System.out.print("Put the value for r2 :");
-        int r2=sc.nextInt();
-        
-        Gcd(r1, r2);
-    }
+        System.out.print("Enter a value for n :");
+        int n=sc.nextInt();
 
+        fibo(n);
+
+
+
+    }
 }
+
+
