@@ -169,7 +169,7 @@ public  class functions_and_methods{
         int r1=sc.nextInt();
         System.out.print("Put the value for r2 :");
         int r2=sc.nextInt();
-       
+        
         Gcd(r1, r2);
     }
 
