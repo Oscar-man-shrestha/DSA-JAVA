@@ -16,6 +16,6 @@ public class lec2{
         String name=sc.next();//takes only one token
         String namee =sc.nextLine();//takes all token
         System.out.println(name); 
-
+//
     }
 }
