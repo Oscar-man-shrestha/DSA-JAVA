@@ -177,30 +177,30 @@
 
 // //  Fibonacci Series of Numbers...
 
-import java.util.*;
-public class functions_and_methods{
-    public static void fibo(int n){
-        int FirstNum=0;
-        int SecondNum=1;
-        for(int i=1;i<=n;i++){
-            System.out.print(FirstNum+",");
-       int Fibonacci=FirstNum+SecondNum;
-       FirstNum=SecondNum;
-       SecondNum=Fibonacci;
+// import java.util.*;
+// public class functions_and_methods{
+//     public static void fibo(int n){
+//         int FirstNum=0;
+//         int SecondNum=1;
+//         for(int i=1;i<=n;i++){
+//             System.out.print(FirstNum+",");
+//        int Fibonacci=FirstNum+SecondNum;
+//        FirstNum=SecondNum;
+//        SecondNum=Fibonacci;
 
-        }
+//         }
           
-    }
-    public static void main (String args []){
-        Scanner sc=new Scanner(System.in);
-        System.out.print("Enter a value for n :");
-        int n=sc.nextInt();
+//     }
+//     public static void main (String args []){
+//         Scanner sc=new Scanner(System.in);
+//         System.out.print("Enter a value for n :");
+//         int n=sc.nextInt();
 
-        fibo(n);
+//         fibo(n);
 
 
 
-    }
-}
+//     }
+// }
 
 
