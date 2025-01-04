@@ -140,33 +140,70 @@
 
 
 
- import java.util.*;
- public class array {
-    public static void main(String args[]) {
-       Scanner sc = new Scanner(System.in);
-       System.out.print(" Enter Size : " );
-       int size = sc.nextInt();
+//  import java.util.*;
+//  public class array {
+//     public static void main(String args[]) {
+//        Scanner sc = new Scanner(System.in);
+//        System.out.print(" Enter Size : " );
+//        int size = sc.nextInt();
 
 
-       int numbers[] = new int[size];
+//        int numbers[] = new int[size];
+
+
+//        //input
+//        for(int i=0; i<size; i++) {
+//            numbers[i] = sc.nextInt();
+//        }
+      
+   
+//         for(int i=0; i<numbers.length; i++) {
+//             if(numbers[i]<numbers[i+1]){
+//                 System.out.println("Sorted :" );
+               
+//             }
+//             else{
+//                 System.out.println("Not sorted :" );
+//             }
+//         }
+       
+    
+//     }
+//  }
+
+//--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+//                              2D Array..
+
+// import java.util.*;
+//  public class array {
+//     public static void main(String args[]) {
+//        Scanner sc = new Scanner(System.in);
+//        System.out.print(" Enter Size : " );
+//        int rows = sc.nextInt();
+//        int colm = sc.nextInt();
+
+
+//        int number [][]=new int [rows][colm];
 
 
        //input
-       for(int i=0; i<size; i++) {
-           numbers[i] = sc.nextInt();
-       }
+//        for(int i=0; i<; i++) {
+//            numbers[i] = sc.nextInt();
+//        }
       
    
-        for(int i=0; i<numbers.length; i++) {
-            if(numbers[i]<numbers[i+1]){
-                System.out.println("Sorted " );
+//         for(int i=0; i<numbers.length; i++) {
+//             if(numbers[i]<numbers[i+1]){
+//                 System.out.println("Sorted :" );
                
-            }
-            else{
-                System.out.println("Not sorted " );
-            }
-        }
+//             }
+//             else{
+//                 System.out.println("Not sorted :" );
+//             }
+//         }
        
     
-    }
- }
+//     }
+//  }
