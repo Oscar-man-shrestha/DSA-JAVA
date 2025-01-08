@@ -1,7 +1,7 @@
 import java.util.*;
 
 public class questions {
-    public static void main(String args[]){
+    public static void main(Strings args[]){
 
         // System.out.println("Enter a number to sum : ");
         // Scanner sc = new Scanner(System.in);
