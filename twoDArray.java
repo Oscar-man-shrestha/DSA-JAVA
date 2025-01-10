@@ -36,7 +36,7 @@
 import java.util.*;
 
 public class twoDArray {
-    public static void main (Strings args[]){
+    public static void main (String args[]){
         Scanner sc= new Scanner(System.in);
         System.out.print("Enter a row :");
         int rows =sc.nextInt();

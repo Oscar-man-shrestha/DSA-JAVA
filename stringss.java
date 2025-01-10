@@ -50,12 +50,12 @@
 // h
 // a
 
-import java.util.*;
-public class Strings {
-     public static void main(String args[]){
+// import java.util.*;
+// public class Strings {
+//      public static void main(String args[]){
       //compare 
-      String name1="oscar";
-      String name2="oscar";
+      // String name1="oscar";
+      // String name2="oscar";
 
      //1. s1>s2  ::+ve value
      //2. s1==s2 ::0
@@ -64,16 +64,37 @@ public class Strings {
      //hello Wello  :: //wello is bigger zstring comparing with hello
      // aahello aabello :: aa herdaina h ra b herxa
 
-   //    if(name1.compareTo(name2)==0){
-   //       System.out.println("Strings are eqaul");
-   //    }
-   //       else{
-   //          System.out.println("Strings are not equal");
-   //       }
+      // if(name1.compareTo(name2)==0){
+      //    System.out.println("Strings are eqaul");
+      // }
+      //    else{
+      //       System.out.println("Strings are not equal");
+      //    }
+
+
+         //kina == kaam gardaina tah
+
+         // if(new String ("Tony ")==new String("Tony")){
+         //    System.out.println("Strings are eqaul");
+         // }
+         //    else{
+         //       System.out.println("Strings are not equal");
+         //    }
 
 
    // String fruits=String.join(" ","oscar","Saimon","sajan");
    // System.out.println(fruits);
-      }
-     }
 
+
+   // String sentence="My name is Oscar Man Shrestha";
+   // String name=sentence.substring(11,sentence.length());
+   //.substring(beginning index,last index)
+   //if .substring(4);
+   //4 dekhi antim samma linxa.
+
+   // System.out.println(name);
+   //    }
+   //   }
+
+
+   //Lecture 12.

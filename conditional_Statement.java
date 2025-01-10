@@ -11,7 +11,7 @@
 import java.util.*;
 public class conditional_Statement {
 
-    public static void main(Strings args [])
+    public static void main(String args [])
     {
 Scanner sc=new Scanner (System.in);  //object of scanner class
 

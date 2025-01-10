@@ -8,7 +8,7 @@ public class practice {
         System.out.print(factorial);
         return ;
     }
-    public static void main (Strings args[]){
+    public static void main (String args[]){
         Scanner sc=new Scanner (System.in);
         int n =sc.nextInt();
 Factorial(n);
