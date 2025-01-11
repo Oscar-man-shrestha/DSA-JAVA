@@ -141,74 +141,216 @@
 //     }
 
 
-//SPIRAL
 
-import java.util.*;
 
-public class homework {
-    public static void main (String args[]){
-    //     Scanner sc=new Scanner(System.in);
-    //     System.out.print("Enter a rows :");
-    //     int rows=sc.nextInt();
-    //     System.out.print("Enter a colums :");
-    //     int colums=sc.nextInt();
-    //    int numbers[][]=new int[rows][colums];
+//SPIRAL...
 
-    //     //This is input..
+// import java.util.*;
+
+// public class homework {
+//     public static void main (String args[]){
+//     //     Scanner sc=new Scanner(System.in);
+//     //     System.out.print("Enter a rows :");
+//     //     int rows=sc.nextInt();
+//     //     System.out.print("Enter a colums :");
+//     //     int colums=sc.nextInt();
+//     //    int numbers[][]=new int[rows][colums];
+
+//     //     //This is input..
        
-    //     for (int i=0;i<rows;i++){
-    //         for(int j=0;j<colums;j++){
-    //         System.out.print("Enter a rows and columns :");
-    //        numbers[i][j]=sc.nextInt();
-    //     }
-    //     }
+//     //     for (int i=0;i<rows;i++){
+//     //         for(int j=0;j<colums;j++){
+//     //         System.out.print("Enter a rows and columns :");
+//     //        numbers[i][j]=sc.nextInt();
+//     //     }
+//     //     }
 
-    int numbers[][]={{1,2,3},{4,5,6},{7,8,9}};
-    int rows=3,colums=3;
+//     int numbers[][]={{1,2,3},{4,5,6},{7,8,9}};
+//     int rows=3,colums=3;
 
 
-        int top=0;
-        int down=rows-1;
-        int left=0;
-        int right=colums-1;
-        int dir=0;
+//         int top=0;
+//         int down=rows-1;
+//         int left=0;
+//         int right=colums-1;
+//         int dir=0;
 
-        while(left<=right && top<=down){ 
-            if(dir==0){
-                for (int i=left;i<=right;i++){
-                    System.out.print(numbers[top][i]+" ");
-                }
-                top++;
-            }
-            else if(dir==1){
-                for(int i=top;i<=down;i++){
-                    System.out.print(numbers[i][right]+" ");
+//         while(left<=right && top<=down){ 
+//             if(dir==0){
+//                 for (int i=left;i<=right;i++){
+//                     System.out.print(numbers[top][i]+" ");
+//                 }
+//                 top++;
+//             }
+//             else if(dir==1){
+//                 for(int i=top;i<=down;i++){
+//                     System.out.print(numbers[i][right]+" ");
                     
-                }
-                right--;
-            }
-            else if(dir==2){
-                for(int i=right;i<=left;i++){
-                    System.out.print(numbers[down][i]+" ");
+//                 }
+//                 right--;
+//             }
+//             else if(dir==2){
+//                 for(int i=right;i<=left;i++){
+//                     System.out.print(numbers[down][i]+" ");
                    
-                }
-                down--;
-            }
-            else if(dir==3){
-                for(int i=down;i<=top;i++){
-                    System.out.print(numbers[i][left]+" ");
+//                 }
+//                 down--;
+//             }
+//             else if(dir==3){
+//                 for(int i=down;i<=top;i++){
+//                     System.out.print(numbers[i][left]+" ");
                    
-                }
-                left++;
+//                 }
+//                 left++;
                
-            }
-            dir=(dir+1)%4;
+//             }
+//             dir=(dir+1)%4;
 
-        }
+//         }
         
         
     
 
+//         }
+
+//     }
+
+
+//                         Transpose of the matrix.
+
+
+// import java.util.*;
+
+// public class homework {
+//     public static void main (String args[]){
+//         Scanner sc=new Scanner(System.in);
+//         System.out.print("Enter number of rows :");
+//         int rows=sc.nextInt();
+//         System.out.print("Enter number of colums :");
+//         int columns =sc.nextInt();
+
+//         int numbers [][] = new int [rows][columns];
+
+//         //  Input. 
+//         System.out.print("Enter numbers for input :");
+//         for(int i=0;i<rows;i++){
+//             for(int j=0;j<columns;j++){
+//                 System.out.print("Element [" + i + "][" + j + "]: ");
+//                 numbers[i][j]=sc.nextInt();
+//             }
+            
+//         }
+        
+
+//         // Output.
+
+//         System.out.println("\nOriginal Matrix:");
+//         for (int i = 0; i < rows; i++) {
+//             for (int j = 0; j < columns; j++) {
+//                 System.out.print(numbers[i][j] + " ");
+//             }
+//             System.out.println();
+//         }
+
+//         System.out.println("\nTranspose Matrix:");
+//         for(int i=0;i<columns;i++){
+//             for(int j=0;j<rows;j++){
+//                 System.out.print(numbers[j][i]+" ");
+//             }
+//             System.out.println();
+//         }
+
+//         }
+
+//     }
+
+
+
+//-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                    //Strings....
+ 
+
+        //  import java.util.*;
+
+        //  public class homework{
+        //      public static void main(String args[]){
+        //          String name="oscar";  
+        //          String str = "123";
+        //          int number =123;
+        //          int no=Integer.parseInt(str);
+        //        String st =Integer.toString(number);
+        //        System.out.println(no);
+        //          System.out.println(number);
+                
+        //              }
+        //           }
+
+
+ // import java.util.*;
+
+// import java.util.*;
+// public class homework{
+//     public static void main(String args[]){
+//        Scanner sc=new Scanner (System.in);
+//        System.out.print("Enter Size :");
+//        int size=sc.nextInt();
+//        String names[]=new String [size];
+
+//        int totalLenght=0;
+//        for(int i=0;i<size;i++){
+//         names[i]=sc.next();
+//         totalLenght+=names[i].length();
+
+//        }
+//        System.out.print(totalLenght);
+//             }
+//          }
+         
+   //Take an array of Strings input from the user & find the cumulative (combined) length of all those strings.
+      
+// import java.util.*;
+// public class homework{
+//     public static void main(String args[]){
+//        Scanner sc=new Scanner (System.in);
+//        System.out.print("Enter Size :");
+//        int size=sc.nextInt();
+//        String names[]=new String [size];
+
+//        int totalLenght=0;
+//        for(int i=0;i<size;i++){
+//         names[i]=sc.next();
+//         totalLenght+=names[i].length();
+
+//        }
+//        System.out.print(totalLenght);
+//             }
+//          }
+         
+
+
+
+//Input a string from the user. Create a new string called ‘result’ in which you will replace the letter ‘e’ in the original string with letter ‘i’. 
+// Example : 
+// original = “eabcdef’ ; result = “iabcdif”
+// Original = “xyz” ; result = “xyz”
+
+import java.util.*;
+public class homework{
+    public static void main(String args[]){
+       Scanner sc=new Scanner(System.in);
+       System.out.print("Enter a word :");
+       String word=sc.next();
+       String result="";
+       for(int i=0;i<word.length();i++){
+        if(word.charAt(i)=='e'){
+            result+='i';
+        }
+        else{
+            result+=word.charAt(i);
         }
 
-    }
+       }
+       System.out.print(result);
+
+            }
+         }
