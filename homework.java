@@ -334,23 +334,53 @@
 // original = “eabcdef’ ; result = “iabcdif”
 // Original = “xyz” ; result = “xyz”
 
-import java.util.*;
-public class homework{
-    public static void main(String args[]){
-       Scanner sc=new Scanner(System.in);
-       System.out.print("Enter a word :");
-       String word=sc.next();
-       String result="";
-       for(int i=0;i<word.length();i++){
-        if(word.charAt(i)=='e'){
-            result+='i';
-        }
-        else{
-            result+=word.charAt(i);
-        }
+// import java.util.*;
+// public class homework{
+//     public static void main(String args[]){
+//        Scanner sc=new Scanner(System.in);
+//        System.out.print("Enter a word :");
+//        String word=sc.next();
+//        String result="";
+//        for(int i=0;i<word.length();i++){
+//         if(word.charAt(i)=='e'){
+//             result+='i';
+//         }
+//         else{
+//             result+=word.charAt(i);
+//         }
 
-       }
-       System.out.print(result);
+//        }
+//        System.out.print(result);
 
-            }
-         }
+//             }
+//          }
+
+//Input an email from the user. You have to create a username from the email by deleting the part that comes after ‘@’. Display that username to the user.
+// Example : 
+// email = “apnaCollegeJava@gmail.com” ; username = “apnaCollegeJava” 
+// email = “helloWorld123@gmail.com”; username = “helloWorld123”
+
+// import java.util.*;
+// public class homework{
+//     public static void main (String args []){
+//         Scanner sc=new Scanner(System.in);
+//         System.out.print("Enter a Email :");
+//         String email = sc.nextLine();
+//         String userNames = "";
+         
+//         for(int i=0;i<email.length();i++){
+//             if(email.charAt(i)=='@'){
+//                 break;
+//             }
+//             else{
+//                 userNames+=email.charAt(i);
+//             }
+//         }
+// System.out.print(userNames);
+
+//     }
+
+
+// }
+
+
