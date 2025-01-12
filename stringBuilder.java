@@ -3,7 +3,7 @@
 //          StringBuilder sb=new StringBuilder("Tony");
 //         // System.out.println(sb);
 
-//         // //Character at index.
+//         //                             //                Character at index.
 //         // System.out.println(sb.charAt(0));
         
 //         // //Set char at index 0
@@ -11,25 +11,21 @@
 //         // sb.setCharAt(0,'p');
 //         // System.out.println(sb);
         
-//         // simple insert.
+//                                          //                simple insert.
 
 //         // sb.insert(2,'k');
 //         // System.out.println(sb);
          
-//         //delet th extra.
+//                                             //             delet th extra.
 
 //         // sb.delete(1,3);
 //         // System.out.println(sb);
          
 
-//         //end mah add.
+//                                              //             end mah add.
         
 //         // sb.append("e");
 //         // System.out.println(sb);
-
-
-
-
 
 //     }
     
@@ -37,7 +33,9 @@
 
 
 
-//                                          palindrome
+//                                        ....palindrome....
+
+
 
 // public class stringBuilder {
 //     public static void main(String args[]){
@@ -62,9 +60,8 @@
     
 // }
 
-
-
-    // Note :Steps
+//..............................................................................................................................................................................................................................................................................................................................................................................
+    //                                                     Note :Steps
 
     // front ko index
     // back  ko index
@@ -72,3 +69,4 @@
     // charAt (index) bata alphabet leu 
     // ani setCharAt bata character change gara front lai back deu back lai front deu.
 
+//..............................................................................................................................................................................................................................................................................................................................................................................
