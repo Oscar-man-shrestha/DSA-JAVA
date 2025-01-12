@@ -1,0 +1,10 @@
+The function uses bit manipulation to determine if nnn is a power of 2. Let’s analyze it step by step:
+1.n > 0:
+-Powers of 2 are always positive (e.g., 1,2,4,8,…1, 2, 4, 8, \dots1,2,4,8,…).
+-If nnn is less than or equal to 0, the function immediately returns false.
+
+2.(n & (n - 1)) == 0:
+-This condition checks the core property of numbers that are powers of 2.
+-In binary representation, a power of 2 has exactly one bit set to 1 (e.g., 2=10,4=100,8=10002 = 10, 4 = 100, 8 = 10002=10,4=100,8=1000).
+-When you subtract 1 from a power of 2, all bits after the 1 are flipped (e.g., 4−1=34 - 1 = 34−1=3, or in binary 100−1=011100 - 1 = 011100−1=011).
+-Performing n&(n−1)n \& (n - 1)n&(n−1) clears the rightmost 1 in nnn, and if nnn is a power of 2, this operation results in 000.
