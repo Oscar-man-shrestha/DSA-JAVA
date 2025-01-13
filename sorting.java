@@ -1,6 +1,3 @@
-
-
-
 //                         //   Bubble sort
 
 
@@ -35,37 +32,66 @@
 // }
 // }
 
+//-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 
 //                              Selecting sort
 
 
-public class sorting{
-    public static void printArray(int arr []){
-        for (int i=0;i<arr.length;i++){
-            System.out.print(arr[i]+" ");
-        }
-    }
-    public static void main(String args[]){
-        int arr[]={7,8,3,1,2};
+// public class sorting{
+//     public static void printArray(int arr []){
+//         for (int i=0;i<arr.length;i++){
+//             System.out.print(arr[i]+" ");
+//         }
+//     }
+//      public static void main(String args[]){
+//         int arr[]={7,8,3,1,2};
 
-        //time complexity =0(n^2)
-        //selection sort
+//         //time complexity =0(n^2)
+//         //selection sort
        
-           for(int i=0;i<arr.length-1;i++){
-            int smallest = i;
-             for(int j=i+1;j<arr.length;j++){     //(n-1,n-2,n-3.......)
-                if(arr[smallest]>arr[j]){    // 8>3
-                 smallest=j;   //samllest = index(2);
-                }
-            }
-            //swap
+//            for(int i=0;i<arr.length-1;i++){
+//             int smallest = i;
+//              for(int j=i+1;j<arr.length;j++){     //(n-1,n-2,n-3.......)
+//                 if(arr[smallest]>arr[j]){    // 8>3
+//                  smallest=j;   //samllest = index(2);
+//                 }
+//             }
+//             //swap
 
-             int temp = arr[smallest];  //temp variable mah 3 halde
-             arr[smallest]=arr[i];     //arr[2]=arr[1]  (3=8)
-             arr[i]=temp;              //arr[1]=arr[smallest] vayo...
+//              int temp = arr[smallest];  //temp variable mah 3 halde
+//              arr[smallest]=arr[i];     //arr[2]=arr[1]  (3=8)
+//              arr[i]=temp;              //arr[1]=arr[smallest] vayo...
 
-           }
-  printArray(arr);
-        }
+//            }
+//   printArray(arr);
+//         }
 
-    }
+//     }
+
+//-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+//                              Insertion sort
+
+// public class sorting{
+//     public static void printArray(int arr []){
+//                 for (int i=0;i<arr.length;i++){
+//                     System.out.print(arr[i]+" ");
+//                 }
+//             }
+//     public static void main (String args[]){
+//         int arr[]={7,8,3,1,2};
+
+//         for(int i=1;i<arr.length;i++){
+//             int curr=arr[i];
+//             int prev=i-1;
+//             while(prev>=0 && arr[prev]>curr){
+//                 arr[prev+1]=arr[prev];
+//                 prev--;
+//             }
+//             arr[prev+1]=curr;
+//         }
+//         printArray(arr);
+//     }
+// }
