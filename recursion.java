@@ -134,3 +134,30 @@
 
 
 
+// print x^n (stack height =n)
+import java.util.*;
+public class recursion {
+   
+    public static int printsquares(int n,int x){
+        if(n==0){
+            return 1;
+        }
+        if(x==0){
+            return 0;
+        }
+        int xpownm1=printsquares(n-1, x);
+        int xpown=x*xpownm1;
+        return xpown;
+    }
+    public static void main (String args []){
+        Scanner sc = new Scanner (System.in);      
+        System.out.print("Eter value for n: "); 
+         int n=sc.nextInt();
+         System.out.print("Eter value for x: "); 
+         int x=sc.nextInt();
+         int result = printsquares(n, x);
+         System.out.print(result);
+    }
+    
+}
+
