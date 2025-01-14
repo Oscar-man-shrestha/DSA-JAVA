@@ -67,3 +67,70 @@
 
 //   FIBONACCI SEQUENCES TILL Nth TERM..
 
+// public class recursion{
+//     public static int printNumbers(int n){
+//         if(n==0 || n==1){
+//             return n;
+//         }
+//         int nm1 = printNumbers(n-1);
+//         int nm2 = printNumbers(n-2);
+//         int fibo = nm1+nm2;
+//         return fibo;
+//     }
+//     public static void main(String args[]){
+//         int ans  = printNumbers(3);
+//         System.out.println(ans);
+
+//     }
+// }
+   
+// public class recursion{
+//     public static void printNumbers(int a,int b,int n){
+//         if(n==0){
+//             return;
+//         }
+//           int c = a+b;
+//           System.out.println(c); 
+//           printNumbers(b, c, n-1);
+
+//     }
+//     public static void main(String args[]){
+//         int a =0;
+//         int b=1;
+//         System.out.println(a);
+//         System.out.println(b);
+//         int n=7;
+//         printNumbers(a, b, n-2);
+       
+
+//     }
+// }
+
+
+// public class recursion{
+//     public static void printNumbers(int a,int b,int n){
+//         if(n==0){
+//             return;
+//         }
+//        int c=a+b;
+//        System.out.print(c+" ");
+//        printNumbers(b, c, n-1);
+//        return;
+       
+//     }
+//     public static void main(String args[]){
+//        int a=0;
+//        int b=1;
+//        int n=7;
+//        System.out.print (a+" ");
+//        System.out.print (b+" ");
+//        printNumbers(a, b, n-2);
+//     }
+// }
+
+//explaination
+
+// suru mah define gare a ra b lai 0 and 1 mah teslai print gare ani n mah k change vayo ra a and b lai argument snet gare animathi c=a+b garera prev num ra prev ko prev number + gare aniprint gare with the change in n which is n-1 ani return garde
+
+
+
