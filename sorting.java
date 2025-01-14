@@ -81,7 +81,7 @@
 //                 }
 //             }
 //     public static void main (String args[]){
-//         int arr[]={7,8,3,1,2};
+//         int arr[]={8,7,3,4,2,1};
 
 //         for(int i=1;i<arr.length;i++){
 //             int curr=arr[i];
