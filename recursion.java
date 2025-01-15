@@ -138,16 +138,23 @@
 import java.util.*;
 public class recursion {
    
-    public static int printsquares(int n,int x){
+    public static int printsquares(int x,int n){
         if(n==0){
             return 1;
         }
         if(x==0){
             return 0;
         }
-        int xpownm1=printsquares(n-1, x);
-        int xpown=x*xpownm1;
-        return xpown;
+       
+        // if n is even 
+        if(n%2==0){
+            return printsquares(x,n/2)*printsquares(x,n/2);
+        }
+        else{       // if n is odd.
+            return printsquares(x,n/2)*printsquares(x,n/2)*x;
+
+        }
+    
     }
     public static void main (String args []){
         Scanner sc = new Scanner (System.in);      
@@ -155,7 +162,7 @@ public class recursion {
          int n=sc.nextInt();
          System.out.print("Eter value for x: "); 
          int x=sc.nextInt();
-         int result = printsquares(n, x);
+         int result = printsquares(x,n);
          System.out.print(result);
     }
     
