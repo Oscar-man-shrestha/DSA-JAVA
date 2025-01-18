@@ -210,3 +210,38 @@
 //        reverseName(name, name.length()-1);
 //     }
 // }
+
+//Find the occurrence of the first and last occurrence of an element using recursion.
+
+public class recursion {
+    public static int first = -1; // To store the first occurrence of the element
+    public static int last = -1;  // To store the last occurrence of the element
+
+    public static void findOccurrence(String name, int index, char element) {
+        // Base case: Stop recursion when the index reaches the end of the string
+        if (index == name.length()) {
+            System.out.println("First occurrence: " + first);
+            System.out.println("Last occurrence: " + last);
+            return;
+        }
+
+        // Check if the current character matches the element
+        if (name.charAt(index) == element) {
+            // Update 'first' only if it has not been updated yet
+            if (first == -1) {
+                first = index;
+            }
+            // Always update 'last' to the current index
+            last = index;
+        }
+
+        // Recursive call to check the next character
+        findOccurrence(name, index + 1, element);
+    }
+
+    public static void main(String[] args) {
+        String name = "aabsfasdbasdfadbfa"; // Input string
+        char element = 'a'; // Character to find
+        findOccurrence(name, 0, element); // Call the recursive method
+    }
+}
