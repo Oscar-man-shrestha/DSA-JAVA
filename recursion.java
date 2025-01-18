@@ -17,6 +17,10 @@
 
 // }
 
+
+//-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
 //SUM OF N NATURAL NUMBER
 
 // public class recursion {
@@ -41,6 +45,8 @@
 
 // }
 
+//-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 //        FACTORIAL OF A NUMBER N
 
 // import java.util.*;
@@ -62,6 +68,8 @@
 //    System.out.println(print);
 // }
 // }
+
+//-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 //   FIBONACCI SEQUENCES TILL Nth TERM..
 
@@ -103,6 +111,8 @@
 //     }
 // }
 
+
+
 // public class recursion{
 //     public static void printNumbers(int a,int b,int n){
 //         if(n==0){
@@ -129,6 +139,8 @@
 // suru mah define gare a ra b lai 0 and 1 mah teslai print gare ani n mah k change vayo ra a and b lai argument snet gare animathi c=a+b garera prev num ra prev ko prev number + gare aniprint gare with the change in n which is n-1 ani return garde
 
 // print x^n (stack height =n)
+
+//-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 // import java.util.*;
 // public class recursion {
@@ -191,6 +203,7 @@
 //     }
 // }
 
+//-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 //Reverse of the string...
 
@@ -211,37 +224,133 @@
 //     }
 // }
 
+//-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 //Find the occurrence of the first and last occurrence of an element using recursion.
 
-public class recursion {
-    public static int first = -1; // To store the first occurrence of the element
-    public static int last = -1;  // To store the last occurrence of the element
+// public class recursion {
+//     public static int first = -1; // To store the first occurrence of the element
+//     public static int last = -1;  // To store the last occurrence of the element
 
-    public static void findOccurrence(String name, int index, char element) {
-        // Base case: Stop recursion when the index reaches the end of the string
-        if (index == name.length()) {
-            System.out.println("First occurrence: " + first);
-            System.out.println("Last occurrence: " + last);
-            return;
-        }
+//     public static void findOccurrence(String name, int index, char element) {
+//         // Base case: Stop recursion when the index reaches the end of the string
+//         if (index == name.length()) {
+//             System.out.println("First occurrence: " + first);
+//             System.out.println("Last occurrence: " + last);
+//             return;
+//         }
 
-        // Check if the current character matches the element
-        if (name.charAt(index) == element) {
-            // Update 'first' only if it has not been updated yet
-            if (first == -1) {
-                first = index;
-            }
-            // Always update 'last' to the current index
-            last = index;
-        }
+//         // Check if the current character matches the element
+//         if (name.charAt(index) == element) {
+//             // Update 'first' only if it has not been updated yet
+//             if (first == -1) {
+//                 first = index;
+//             }
+//             // Always update 'last' to the current index
+//             last = index;
+//         }
 
-        // Recursive call to check the next character
-        findOccurrence(name, index + 1, element);
-    }
+//         // Recursive call to check the next character
+//         findOccurrence(name, index + 1, element);
+//     }
 
-    public static void main(String[] args) {
-        String name = "aabsfasdbasdfadbfa"; // Input string
-        char element = 'a'; // Character to find
-        findOccurrence(name, 0, element); // Call the recursive method
-    }
-}
+//     public static void main(String[] args) {
+//         String name = "aabsfasdbasdfadbfa"; // Input string
+//         char element = 'a'; // Character to find
+//         findOccurrence(name, 0, element); // Call the recursive method
+//     }
+// }
+
+//-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+//Check if an array is sorted (strictly increasing). - O(n)
+
+// public class recursion {
+   
+//     public static boolean isSorted(int arr [],int index) {
+//         if(index==arr.length-1){
+//             return true;
+//         }
+//         if (arr[index]<arr[index+1]) {
+//             return isSorted(arr, index+1);
+//         }
+//         else{
+//             return false;
+//         }
+//     }
+//     public static void main(String[] args) {
+//         int arr []={1,2,3,4,5};
+//         System.out.println(isSorted(arr,0)); 
+
+//     }
+// }
+
+//-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+//   Move all ‘x’ to the end of the string. - O(n)
+
+
+// public class recursion {
+   
+//     public static void moveAllX(String name,int index,int count,String newName) {
+      
+//         if(index==name.length()){
+//             for(int i=0;i<count;i++){
+//             newName+='a';
+//         }
+//         System.out.print(newName);
+//         return;
+//     }
+
+//         char currCharacter = name.charAt(index);
+//         if(currCharacter == 'a'){
+//             count++;
+//             moveAllX(name, index+1, count, newName);
+//         }
+//         else{
+//            newName+=currCharacter;
+//            moveAllX(name, index+1, count, newName);
+//         }
+
+//     }
+//     public static void main(String[] args) {
+//        String name = "abcbdbsbsdfbsabasfbasdfdsfababfadf";
+//        moveAllX(name,0,0," ");
+//     }
+// }
+
+
+//-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+//  Remove duplicates in a string.
+
+// public class recursion {
+//     public static boolean [] map =new boolean[26];
+   
+//     public static void removeDuplicate(String word,int index,String newWord) {
+//         if(index==word.length()){
+//             System.out.println(newWord);
+//             return;
+//         }
+
+//         char currentChar = word.charAt(index);
+//         if(map[currentChar-'a']){
+//             removeDuplicate(word, index+1, newWord);
+//         }
+//         else{
+//             newWord+=currentChar;
+//             map[currentChar-'a']=true;
+//             removeDuplicate(word,index+1,newWord);
+//         }
+
+//     }
+//     public static void main(String[] args) {
+//        String word = "abbccddeeffgghhiijjkkmmnn";
+//        removeDuplicate(word,0,"");
+//     }
+// }
+
+//-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+         
+
+
