@@ -431,31 +431,31 @@
 // )
 
 
-import java.util.HashSet;
+// import java.util.HashSet;
 
-public class recursion {
-    public static String [] keypad = {".","abc","def","ghi","jkl","mno","pqrs","tu","vwx","yz"};
-    public static void printComb(String str,int index,String combination) {
+// public class recursion {
+//     public static String [] keypad = {".","abc","def","ghi","jkl","mno","pqrs","tu","vwx","yz"};
+//     public static void printComb(String str,int index,String combination) {
    
-if(index==str.length()){
-    System.out.println(combination);
-    return;
-}
-        //for ex:string bata 32 ayo tesma mah index zero vayeko le 3 ayo
-    char currChar = str.charAt(index);
-    //for ex: ya bata 3 index mah vako charactera yo keypad bata [ghi]
-    String mapping = keypad[currChar-'0'];
-    //  for ex: ghi ko lagi loop lago
-    for(int i=0;i<mapping.length();i++){
-printComb(str, index+1, combination+mapping.charAt(i));
-    }
-}
+// if(index==str.length()){
+//     System.out.println(combination);
+//     return;
+// }
+//         //for ex:string bata 32 ayo tesma mah index zero vayeko le 3 ayo
+//     char currChar = str.charAt(index);
+//     //for ex: ya bata 3 index mah vako charactera yo keypad bata [ghi]
+//     String mapping = keypad[currChar-'0'];
+//     //  for ex: ghi ko lagi loop lago
+//     for(int i=0;i<mapping.length();i++){
+// printComb(str, index+1, combination+mapping.charAt(i));
+//     }
+// }
 
-    public static void main(String[] args) {
-        String str="32";
+//     public static void main(String[] args) {
+//         String str="32";
         
-        printComb(str,0,"");
+//         printComb(str,0,"");
 
-    }
-}
+//     }
+// }
 
