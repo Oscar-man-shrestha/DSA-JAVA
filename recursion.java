@@ -351,6 +351,110 @@
 // }
 
 //-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+         //Q7. Print all the subsequences of a string.
+
+//      Time complexity - O(2^n)
+
+
+// public class recursion {
+    
+   
+//     public static void subString(String str,int index,String newStr) {
+//        if(index==str.length()){
+//         System.out.println(newStr);
+//         return;
+//        }
+//        char currChar = str.charAt(index);
+
+//        //To Be
+//         subString(str, index+1, newStr+currChar);
+//         //Don't want to be
+//         subString(str, index+1, newStr);
+//     }
+
+//     public static void main(String[] args) {
+//         String str="abc";
+//         subString(str,0,"");
+
+//     }
+// }
+
+
+//-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
          
+//Q8. Print all unique subsequences of a string.
+
+// import java.util.HashSet;
+
+// public class recursion {
+//     public static void subString(String str,int index,String newStr,HashSet<String>set) {
+//        if(index==str.length()){
+//         if(set.contains(newStr)){  //set mah  new sub string exist garxa ? 
+//             return;
+//         }
+//         else{
+//             System.out.println(newStr);
+//             set.add(newStr);
+//             return;
+//         }
+        
+//        }
+//        char currChar = str.charAt(index);
+
+// //        //To Be
+//         subString(str, index+1, newStr+currChar,set);
+//         //Don't want to be
+//         subString(str, index+1, newStr,set);
+//     }
+
+//     public static void main(String[] args) {
+//         String str="aaa";
+//         HashSet<String> set=new HashSet<>();
+//         subString(str,0,"",set);
+
+//     }
+// }
+
+//-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+// Print keypad combination
+// ( 0 -> .;
+// 1 -> abc
+// 2 -> def
+// 3 -> ghi
+// 4 -> jkl
+// 5 -> mno
+// 6 -> pqrs
+// 7 -> tu
+// 8 -> vwx
+// 9 -> yz
+// )
 
 
+import java.util.HashSet;
+
+public class recursion {
+    public static String [] keypad = {".","abc","def","ghi","jkl","mno","pqrs","tu","vwx","yz"};
+    public static void printComb(String str,int index,String combination) {
+   
+if(index==str.length()){
+    System.out.println(combination);
+    return;
+}
+        //for ex:string bata 32 ayo tesma mah index zero vayeko le 3 ayo
+    char currChar = str.charAt(index);
+    //for ex: ya bata 3 index mah vako charactera yo keypad bata [ghi]
+    String mapping = keypad[currChar-'0'];
+    //  for ex: ghi ko lagi loop lago
+    for(int i=0;i<mapping.length();i++){
+printComb(str, index+1, combination+mapping.charAt(i));
+    }
+}
+
+    public static void main(String[] args) {
+        String str="32";
+        
+        printComb(str,0,"");
+
+    }
+}
