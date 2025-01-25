@@ -468,24 +468,150 @@
 //Print all permutations of a String.
 
 
-public class recursion {
+// public class recursion {
 
-    public static void printPerm(String str,String permutation) {
-        //base case
-        if(str.length()==0){
-            System.out.println(permutation);
-            return;
+//     public static void printPerm(String str,String permutation) {
+//         //base case
+//         if(str.length()==0){
+//             System.out.println(permutation);
+//             return;
+//         }
+//    for(int i=0;i<str.length();i++){ 
+//     char currChar = str.charAt(i);
+//     String newStr=str.substring(0, i)+str.substring(i+1);
+//     printPerm(newStr, permutation+currChar);
+//    }
+//     }
+
+//     public static void main(String[] args) {
+//         String str="abc";
+//         printPerm(str,"");
+//     }
+// }
+
+
+//Time complexity - O(n*n!)
+
+////-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+//CountPathMaze 
+
+// public class recursion {
+
+//     public static int countPaths(int right,int down, int n,int m) {
+//         //There no path from here.
+//         if(right==n || down==m){
+//             return 0;
+//         }
+//         //There's only one path to move to that direction.
+//         if(right==n-1 && down==m-1){
+//             return 1;
+//         }
+//         // move downwards.
+//         int rightPaths=countPaths(right,down+1, n, m);
+         
+//         //move right.
+//         int downPaths=countPaths(right+1,down, n, m);
+        
+//         return rightPaths+downPaths;
+
+
+//     }
+
+//     public static void main(String[] args) {
+//        int n=3;
+//        int m=3;
+//        int totalPaths = countPaths(0,0,n,m);
+//        System.out.println(totalPaths);
+//     }
+// }
+
+// //Time complexity - O(2^(m+n))
+
+//-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//Tiling problem
+
+// public class recursion {
+
+//     public static int placeTiles(int n,int m) {
+//         //base case
+//         if(n==m){
+//             return 2;
+//         }
+//         if(n<m){
+//             return 1;
+//         }
+
+//         //vertically placed
+//         int vertPlacement=placeTiles(n-m, m);
+//         //horizontally placed
+//         int horiPlacement=placeTiles(n-1,m);
+//         return vertPlacement+horiPlacement;
+
+//     }
+
+//     public static void main(String[] args) {
+//        int n=4;
+//        int m=2;
+//        int totalPaths = placeTiles(n,m);
+//        System.out.println(totalPaths);
+//     }
+// }
+
+//-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//Friends pairing problem
+
+
+// import java.util.*;
+// public class recursion{
+//     public static int pairFriends (int n){
+//         if(n<=1){
+//             return 1;
+//         }
+//         //single 
+//         int ways1=pairFriends(n-1);
+//         //pair
+//         int ways2=(n-1)*pairFriends(n-2);
+//         return ways1+ways2;
+//     }
+//     public static void main(String args []){
+//         Scanner sc=new Scanner (System.in);
+//         System.out.print("Enter number of people: ");
+//         int n=sc.nextInt();
+//         System.out.println(pairFriends(n));
+//     }
+// }
+
+//-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+//   Subsets of a set
+
+
+import java.util.*;
+public class recursion{
+    public static void printSubsets(ArrayList<Integer>subset){
+        for(int i=0;i<subset.size();i++){
+            System.out.print(subset.get(i)+" ");
         }
-   for(int i=0;i<str.length();i++){ 
-    char currChar = str.charAt(i);
-    String newStr=str.substring(0, i)+str.substring(i+1);
-    printPerm(newStr, permutation+currChar);
-   }
+        System.out.println();
     }
+    public static void findSubsets (int n,ArrayList<Integer>subset){
+       if (n==0){
+        printSubsets(subset);
+        return;
+       }
+        //add hoga
+        subset.add(n);
+        findSubsets(n-1, subset);
 
-    public static void main(String[] args) {
-        String str="abc";
-        printPerm(str,"");
+        //add nahi hoga
+        subset.remove(subset.size()-1);
+        findSubsets(n-1, subset);
+    }
+    public static void main(String args []){
+       int n=3;
+       ArrayList<Integer> subset =new ArrayList<>();
+       findSubsets(n, subset);
     }
 }
 
+//Time complexity : O(n^2)
